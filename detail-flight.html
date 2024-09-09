@@ -286,7 +286,7 @@
                     </p>
                   </div>
                   <div class="flex items-center justify-between">
-                    <a class="text-[#2196F3] text-sm" href="">Directo</a>
+                    <button data-bs-toggle="modal" data-bs-target="#modalDirecto" class="text-[#2196F3] text-sm" href="">Directo</button>
                     <div class="flex items-center gap-1">
                       <p class="text-sm text-[#666666]">Operado por</p>
                       <img src="./img/iso-latam.png" alt="" />
@@ -599,7 +599,7 @@
                     </p>
                   </div>
                   <div class="flex items-center justify-between pb-2">
-                    <a class="text-[#2196F3] text-sm" href="">Directo</a>
+                    <a data-bs-toggle="modal" data-bs-target="#modalParada" class="text-[#2196F3] text-sm">2 Paradas</a>
                     <div class="flex items-center gap-1">
                       <p class="text-sm text-[#666666]">Operado por</p>
                       <img src="./img/iso-avianca.png" alt="" />
@@ -1213,6 +1213,162 @@
 
     <!-- footer -->
     <footer class="bg-[#142973] h-[180px] w-100"></footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalDirecto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down !mr-0">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="text-[#142973] font-semibold" id="staticBackdropLabel">Itinerario de vuelo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="flex gap-6">
+              <div class="w-full">
+                <div class="flex flex-col gap-[50px]">
+                  <div class="text-end min-h-[100px]">
+                    <p class="text-sm text-[#666666]">Salida</p>
+                    <p class="text-[#22357F]">GYE 5:00 a.m.</p>
+                    <p class="text-sm text-[#666666]">Aeropuerto Internacional José Joaquín de Olmedo</p>
+                  </div>
+                  <div class="text-end">
+                    <p class="text-[#0079C1] text-sm">Duración</p>
+                    <p class="text-[#0079C1]">1 h 20 min</p>
+                  </div>
+                  <div class="text-end min-h-[100px]">
+                    <p class="text-sm text-[#666666]">Salida</p>
+                    <p class="text-[#22357F]">GYE 5:00 a.m.</p>
+                    <p class="text-sm text-[#666666]">Aeropuerto Internacional José Joaquín de Olmedo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center flex-col">
+                <span class="w-5 h-5 border-2 border-[#0079C1] rounded-full"></span>
+                <div class="w-[2px] h-[250px] bg-[#0079C1]"></div>
+                <i data-lucide="map-pin" class="text-[#0079C1]"></i>
+              </div>
+              <div class="w-full">
+                <div class="flex justify-center items-center h-full">
+                  <div>
+                    <div class="flex items-center gap-1">
+                      <img src="./img/iso-latam.png" alt="">
+                      <p class="text-sm text-[#22357F]">LATAM Airlines</p>
+                    </div>
+                    <p class="text-sm text-[#666666]">Airbus A319</p>
+                    <p class="text-sm text-[#666666]">Operado por LATAM Airlines Ecuador</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="w-full flex items-center justify-center h-[42px] bg-[#0079C1] rounded-[42px]" data-bs-dismiss="modal">
+              <span class="text-white font-semibold text-[15px] uppercase">entendido</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalParada" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down !mr-0">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="text-[#142973] font-semibold" id="staticBackdropLabel">Itinerario de vuelo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="flex gap-6">
+              <div class="w-full flex flex-col gap-[200px]">
+                <div class="flex flex-col gap-[50px]">
+                  <div class="text-end min-h-[100px]">
+                    <p class="text-sm text-[#666666]">Salida</p>
+                    <p class="text-[#22357F]">GYE 5:00 a.m.</p>
+                    <p class="text-sm text-[#666666]">Aeropuerto Internacional José Joaquín de Olmedo</p>
+                  </div>
+                  <div class="text-end">
+                    <p class="text-[#0079C1] text-sm">Duración</p>
+                    <p class="text-[#0079C1]">1 h 20 min</p>
+                  </div>
+                  <div class="text-end min-h-[100px]">
+                    <p class="text-sm text-[#666666]">Salida</p>
+                    <p class="text-[#22357F]">GYE 5:00 a.m.</p>
+                    <p class="text-sm text-[#666666]">Aeropuerto Internacional José Joaquín de Olmedo</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[50px]">
+                  <div class="text-end min-h-[100px]">
+                    <p class="text-sm text-[#666666]">Salida</p>
+                    <p class="text-[#22357F]">GYE 5:00 a.m.</p>
+                    <p class="text-sm text-[#666666]">Aeropuerto Internacional José Joaquín de Olmedo</p>
+                  </div>
+                  <div class="text-end">
+                    <p class="text-[#0079C1] text-sm">Duración</p>
+                    <p class="text-[#0079C1]">1 h 20 min</p>
+                  </div>
+                  <div class="text-end min-h-[100px]">
+                    <p class="text-sm text-[#666666]">Salida</p>
+                    <p class="text-[#22357F]">GYE 5:00 a.m.</p>
+                    <p class="text-sm text-[#666666]">Aeropuerto Internacional José Joaquín de Olmedo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="flex items-center flex-col">
+                  <span class="w-5 h-5 border-2 border-[#0079C1] rounded-full"></span>
+                  <div class="w-[2px] h-[250px] bg-[#0079C1]"></div>
+                  <i data-lucide="map-pin" class="text-[#0079C1]"></i>
+                </div>
+                <div class="relative flex items-center justify-center">
+                  <div class="w-[1px] h-[250px] bg-[#71717A80]"></div>
+                  <div class="absolute w-[300px] flex items-center justify-center gap-3 border border-[#0079C1] py-2 rounded-[50px] bg-white">
+                    <i data-lucide="plane" class="text-[#0079C1]"></i>
+                    <div class="text-center">
+                      <p class="text-[#666666] text-sm">Cambio de avión en Quito (UIO)</p>
+                      <p class="text-[#0079C1]">1 h 40 min</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center flex-col">
+                  <span class="w-5 h-5 border-2 border-[#0079C1] rounded-full"></span>
+                  <div class="w-[2px] h-[250px] bg-[#0079C1]"></div>
+                  <i data-lucide="map-pin" class="text-[#0079C1]"></i>
+                </div>
+              </div>
+              <div class="w-full">
+                <div class="flex flex-col h-full gap-[200px]">
+                  <div class="flex justify-center items-center h-full">
+                    <div>
+                      <div class="flex items-center gap-1">
+                        <img src="./img/iso-latam.png" alt="">
+                        <p class="text-sm text-[#22357F]">LATAM Airlines</p>
+                      </div>
+                      <p class="text-sm text-[#666666]">Airbus A319</p>
+                      <p class="text-sm text-[#666666]">Operado por LATAM Airlines Ecuador</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center h-full">
+                    <div>
+                      <div class="flex items-center gap-1">
+                        <img src="./img/iso-latam.png" alt="">
+                        <p class="text-sm text-[#22357F]">LATAM Airlines</p>
+                      </div>
+                      <p class="text-sm text-[#666666]">Airbus A319</p>
+                      <p class="text-sm text-[#666666]">Operado por LATAM Airlines Ecuador</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="w-full flex items-center justify-center h-[42px] bg-[#0079C1] rounded-[42px]" data-bs-dismiss="modal">
+              <span class="text-white font-semibold text-[15px] uppercase">entendido</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
