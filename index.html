@@ -288,9 +288,6 @@
                       <div class="!px-6 !py-4">
                         <p class="text-sm !pb-5">*Edades respecto al último día del viaje </p>
                         <div class="flex items-center gap-3">
-                          <button class="w-full text-[#0079C1] border !border-[#0079C1] h-[56px] rounded-md !px-3">
-                            <span class="uppercase">Agregar habitación</span>
-                          </button>
                           <button class="px-4 bg-[#0079C1] flex items-center justify-center h-[56px] rounded hover:bg-[#1484C6]">
                             <span class="text-white uppercase">hecho</span>
                           </button>
@@ -298,6 +295,60 @@
                       </div>
                     </div>
                   </div>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                      1 Habitación, 2 personas
+                    </button>
+                    <div class="dropdown-menu">
+                      <div class="!px-6 !py-4">
+                        <div>
+                          <p>HABITACIÓN 2</p>
+                          <div>
+                            <div class="flex items-center justify-between h-[60px] w-[300px] md:w-[340px]">
+                              <div>
+                                <p class="text-sm text-black">Adultos</p>
+                                <p class="text-xs text-black">Edad: 18+</p>
+                              </div>
+                              <div class="flex items-center">
+                                <i data-lucide="circle-minus" class="text-[#142973] cursor-pointer opacity-50"></i>
+                                <span class="w-[43px] text-center text-sm text-[#49454F]">1</span>
+                                <i data-lucide="circle-plus" class="text-[#142973] cursor-pointer"></i>
+                              </div>
+                            </div>
+                            <div class="flex items-center justify-between h-[60px] w-[300px] md:w-[340px]">
+                              <div>
+                                <p class="text-sm text-black">Menores</p>
+                                <p class="text-xs text-black">Edad: 0-17</p>
+                              </div>
+                              <div class="flex items-center">
+                                <i data-lucide="circle-minus" class="text-[#142973] cursor-pointer opacity-50"></i>
+                                <span class="w-[43px] text-center text-sm text-[#49454F]">1</span>
+                                <i data-lucide="circle-plus" class="text-[#142973] cursor-pointer"></i>
+                              </div>
+                            </div>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                              <div class="w-full">
+                                <div class="input-wrapper w-full">
+                                  <input type="text" id="edad" class="input-field placeholder-transparent" placeholder=" " required="">
+                                  <label for="edad" class="input-label">Edad del Menor 1*</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="border-t border-[#E0E0E0] pb-1 mt-1"></div> 
+                      <div class="!px-6 !py-4">
+                        <p class="text-sm !pb-5">*Edades respecto al último día del viaje </p>
+                        <div class="flex items-center gap-3">
+                          <button class="px-4 bg-[#0079C1] flex items-center justify-center h-[56px] rounded hover:bg-[#1484C6]">
+                            <span class="text-white uppercase">hecho</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="text-[#0079C1] text-sm underline" href="">Agregar habitación</a>
                 </div>
                 <div class="flex items-end gap-6 flex-col lg:flex-row">
                   <div class="w-full">
